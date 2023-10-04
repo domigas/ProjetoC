@@ -1,0 +1,13 @@
+<h1>{{#if user}} Editar {{else }}Novo{{/if}} Usuário</h1>
+<form action="/users/{{#if user}}update{{else }}add{{/if}}" method="post">
+    {{#if user}}
+        <input name="id" type="hidden" value="{{user.id}}"/>
+    {{/if}}
+    <label>Nome</label>
+    <input name="nome" value="{{#if user}}{{user.nome}}{{/if}}"/><br><br>
+    <label>Email</label>
+    <input name="email" type="email" value="{{#if user}}{{user.email}}{{/if}}"/><br><br>
+    <label>Senha</label>
+    <input name="senha" type="password" value="{{#if user}}{{user.senha}}{{/if}}"/><br><br>
+    <input type="submit" value="Enviar"/>
+</form>

@@ -1,0 +1,127 @@
+/* Reset default margin and padding */
+body, h1, form, .logout-link {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the form and text */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff; /* Mantido como rosa claro */
+}
+
+/* Style the form container */
+form {
+  background-color: #fff; /* Mantido como branco */
+  border: 1px solid #106810; /* Verde */
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 400px; /* Define a largura máxima do formulário */
+}
+
+/* Style the form title */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #104e10; /* Verde */
+}
+
+/* Style labels and inputs */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0d4e0d; /* Verde */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #134e13; 
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #1a531a; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #0066cc; 
+}
+
+.logout-link {
+  margin-top: 20px;
+}
+
+.logout-link a {
+  color: #125512; /* Verde */
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: green; 
+  color: white; 
+}
+
+table {
+  border-collapse: collapse; 
+  width: 100%; 
+}
+
+th, td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+th {
+  background-color: rgb(32, 100, 32);
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+.logout-link a:hover {
+  text-decoration: underline;
+}
+
+.btn-warning {
+    background-color: green;
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #f8f8f8;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(34, 114, 34);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-green-bg {
+  background-color: #115545; 
+}

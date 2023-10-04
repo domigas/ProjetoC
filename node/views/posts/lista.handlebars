@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Lista do Post</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Usuário</th>
+            <th>Visualizar</th>
+            <th>Alterar</th>
+            <th>Excluir</th>
+        </tr>
+        {{#each posts}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.titulo}}</td>
+                <td>{{this.users_nome}}</td>
+                <td align="center">
+                    <a type="button" class="btn btn-primary" href="/posts/view/{{this.id}}">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </td>
+
+                <td align="center">
+                    <a type="button" class="btn btn-primary" href="/posts/edit/{{this.id}}">
+                        <i class="bi bi-pencil"></i>
+                    </a>
+                </td>
+                </td>
+                <td align="center">
+                    <a type="button" class="btn btn-warning" href="/posts/delete/{{this.id}}">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+</html>

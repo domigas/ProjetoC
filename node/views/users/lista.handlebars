@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Lista Usuários</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Visualizar</th>
+            <th>Alterar</th>
+            <th>Excluir</th>
+        </tr>
+        {{#each users}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.nome}}</td>
+                <td>{{this.email}}</td>
+                <td align="center">
+                    <a type="button" class="btn btn-primary" href="/users/view/{{this.id}}">
+                        <i class="bi bi-eye"></i>
+                    </a>
+                </td>
+
+                <td align="center">
+                    <a type="button" class="btn btn-primary" href="/users/edit/{{this.id}}">
+                        <i class="bi bi-pencil"></i>
+                    </a>
+                </td>
+                <td align="center">
+                    <a type="button" class="btn btn-primary" href="/users/delete/{{this.id}}">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
